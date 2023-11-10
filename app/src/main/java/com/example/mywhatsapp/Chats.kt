@@ -108,8 +108,22 @@ fun getContacto(): List<Contacto> {
 }
 
 @Composable
-fun MyDropDownMenu(showMenu: Boolean){
-
+fun MyDropDownMenu(showMenu: Boolean, onShowMenuChange: (Boolean) -> Unit){
+    DropdownMenu(
+        expanded = showMenu,
+        onDismissRequest = { onShowMenuChange(false) },
+        Modifier.width(150.dp)
+    ) {
+        DropdownMenuItem(
+            text = { Text(text = "Salir del grupo", color = Color.Black) },
+            onClick = { /*TODO*/ })
+        DropdownMenuItem(
+            text = { Text(text = "Info. del grupo", color = Color.Black) },
+            onClick = { /*TODO*/ })
+        DropdownMenuItem(
+            text = { Text(text = "Crear acceso directo", color = Color.Black) },
+            onClick = { /*TODO*/ })
+    }
 }
 
 @OptIn(ExperimentalFoundationApi::class)
@@ -150,21 +164,7 @@ fun LineaContacto(contacto: Contacto){
                 }
             )
         }){
-        DropdownMenu(
-            expanded = showMenu,
-            onDismissRequest = { showMenu = false },
-            Modifier.width(150.dp)
-        ) {
-            DropdownMenuItem(
-                text = { Text(text = "Salir del grupo", color = Color.Black) },
-                onClick = { /*TODO*/ })
-            DropdownMenuItem(
-                text = { Text(text = "Info. del grupo", color = Color.Black) },
-                onClick = { /*TODO*/ })
-            DropdownMenuItem(
-                text = { Text(text = "Crear acceso directo", color = Color.Black) },
-                onClick = { /*TODO*/ })
-        }
+        MyDropDownMenu(showMenu) {showMenu = it}
         Image(
             painter = painterResource(id = contacto.photo),
             contentDescription = "Avatar",
