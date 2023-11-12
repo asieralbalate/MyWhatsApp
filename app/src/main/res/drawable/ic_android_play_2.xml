@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:tint="@color/black"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group
+        android:name="translational"
+        android:pivotX="12"
+        android:pivotY="12">
+        <path
+            android:name="play2"
+            android:fillColor="@color/black"
+            android:strokeColor="#fff"
+            android:strokeWidth="2"
+            android:pathData="M 11.245 16.795 L 19 12.14 L 19 12.14 L 11.245 7.205 Z" />
+    </group>
+</vector>
