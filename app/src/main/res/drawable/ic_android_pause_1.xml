@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="200dp"
-    android:height="200dp"
-    android:tint="@color/black"
+    android:width="256dp"
+    android:height="256dp"
     android:viewportWidth="24"
     android:viewportHeight="24">
     <group
-        android:name="translational"
+        android:name="grouprotation"
         android:pivotX="12"
         android:pivotY="12">
         <path
             android:name="pause1"
-            android:fillColor="@color/black"
             android:strokeColor="#fff"
             android:strokeLineCap="square"
             android:strokeWidth="2"

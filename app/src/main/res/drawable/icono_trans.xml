@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_android_pause_1">
+    <target
+        android:name="pause1"
+        android:animation="@animator/traslacion" />
+    <target
+        android:name="grouprotation"
+        android:animation="@animator/traslacion" />
+</animated-vector>
