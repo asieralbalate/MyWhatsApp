@@ -3,8 +3,8 @@
     android:drawable="@drawable/ic_android_pause_1">
     <target
         android:name="pause1"
-        android:animation="@animator/traslacion" />
+        android:animation="@animator/traslacion1" />
     <target
-        android:name="grouprotation"
-        android:animation="@animator/traslacion" />
+        android:name="pause2"
+        android:animation="@animator/traslacion2" />
 </animated-vector>
