@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/face">
+    <target
+        android:name="ojoizquierdoabierto"
+        android:animation="@animator/traslacionojoizquierdo" />
+    <target
+        android:name="ojoderechoabierto"
+        android:animation="@animator/traslacionojoderecho" />
+    <target
+        android:name="boca"
+        android:animation="@animator/traslacionboca" />
+    <target
+        android:name="cara"
+        android:animation="@animator/traslacioncolor"/>
+</animated-vector>
