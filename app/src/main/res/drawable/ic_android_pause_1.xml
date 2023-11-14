@@ -4,6 +4,12 @@
     android:height="256dp"
     android:viewportWidth="24"
     android:viewportHeight="24">
-        <path android:name="pause1" android:fillColor="#4d4d4d" android:pathData="M 6 5 L 6 19 L 10 19 L 10 5 Z"/>
-        <path android:name="pause2" android:fillColor="#4d4d4d" android:pathData="M 14 19 L 18 19 L 18 5 L 14 5 Z"/>
+    <path
+        android:name="pause1"
+        android:fillColor="#4d4d4d"
+        android:pathData="M 6 5 L 6 19 L 10 19 L 10 5 Z" />
+    <path
+        android:name="pause2"
+        android:fillColor="#4d4d4d"
+        android:pathData="M 14 19 L 18 19 L 18 5 L 14 5 Z" />
 </vector>
