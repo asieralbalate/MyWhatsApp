@@ -118,8 +118,8 @@ fun MyFAB() {
 @Composable
 fun MyTabs() {
     val scope = rememberCoroutineScope()
-    val titles = listOf("Chats", "Novedades", "Llamadas")
-    val pagerState = rememberPagerState(initialPage = 0, initialPageOffsetFraction = 0f){3}
+    val titles = listOf("Chats", "Novedad", "Llamadas", "Estrella")
+    val pagerState = rememberPagerState(initialPage = 0, initialPageOffsetFraction = 0f){4}
     Column {
         TabRow(
             selectedTabIndex = pagerState.currentPage,
@@ -139,6 +139,7 @@ fun MyTabs() {
                 0 -> Chats()
                 1 -> Novedades()
                 2 -> Llamadas()
+                3-> Estrella()
             }
         }
     }
@@ -154,9 +155,11 @@ fun AnimatedVectorDrawable(){
     Image(
         painter = rememberAnimatedVectorPainter(image, atEnd),
         contentDescription = "VectorDrawable",
-        modifier = Modifier.size(32.dp).clickable {
-            atEnd = !atEnd
-        },
+        modifier = Modifier
+            .size(32.dp)
+            .clickable {
+                atEnd = !atEnd
+            },
         contentScale = ContentScale.Crop,
     )
 }
